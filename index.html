@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VERDEJAR | Erva-Mate & Chimarrão</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS do site -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent glass-nav">
+
+        <div class="container">
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav1"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav1">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <header class="hero-verdejar" id="inicio">
+
+        <div class="logo-box">
+
+            <img
+                src="./img/logo4.png"
+                alt="Logo Verdejar"
+            >
+
+        </div>
+
+        <div class="hero-content">
+
+            <h1>VERDEJAR</h1>
+
+            <h2>Erva-Mate & Chimarrão</h2>
+
+            <p>
+                Tradição, qualidade e o verdadeiro sabor do chimarrão.
+            </p>
+
+
+            <!-- BUSCA -->
+
+            <form
+                class="verdejar-search"
+                id="formBusca"
+            >
+
+                <input
+                    type="search"
+                    id="campoBusca"
+                    placeholder="Buscar produtos..."
+                    autocomplete="off"
+                >
+
+            </form>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         BENEFÍCIOS
+    ========================== -->
+
+    <section class="beneficios">
+
+        <div>
+            🚚 Frete Grátis para todo o Brasil
+        </div>
+
+        <div>
+            🌿 Erva selecionada
+        </div>
+
+        <div>
+            🔒 Compra segura
+        </div>
+
+        <div>
+            ⭐ Qualidade Premium
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CARRINHO
+    ========================== -->
+
+    <section class="area-carrinho">
+
+        <div id="carrinho">
+
+            <div class="cabecalho-carrinho">
+
+                <h3>🛒 Seu Carrinho</h3>
+
+                <span id="contadorCarrinho">
+                    0 itens
+                </span>
+
+            </div>
+
+
+            <ul id="listaCarrinho">
+
+                <li class="carrinho-vazio">
+                    Seu carrinho está vazio.
+                </li>
+
+            </ul>
+
+
+            <div class="rodape-carrinho">
+
+                <strong>
+                    Total:
+                </strong>
+
+                <span>
+                    R$ <span id="totalCarrinho">0,00</span>
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUTOS
+    ========================== -->
+
+    <main id="produtos">
+
+        <div class="vitrine-produtos">
+
+
+            <!-- PRODUTO 1 -->
+
+            <article
+                class="card-produto"
+                data-nome="Erva-Mate Verdejar Pura Folha"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/erva.png"
+                        alt="Erva-Mate Verdejar"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        ERVA-MATE PREMIUM
+                    </span>
+
+                    <h3>
+                        Erva-Mate Verdejar - Pura Folha (1kg)
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 24,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Erva-Mate Verdejar - Pura Folha (1kg)"
+                        data-preco="24.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 2 -->
+
+            <article
+                class="card-produto"
+                data-nome="Cuia de Porongo Natural Selecionado"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/cuia.png"
+                        alt="Cuia de Porongo Natural"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        CUIAS ARTESANAIS
+                    </span>
+
+                    <h3>
+                        Cuia de Porongo Natural Selecionado
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 89,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Cuia de Porongo Natural Selecionado"
+                        data-preco="89.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 3 -->
+
+            <article
+                class="card-produto"
+                data-nome="Garrafa Térmica Inox Premium"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/garrafa1.png"
+                        alt="Garrafa Térmica Inox Premium"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        GARRAFA VERDEJAR
+                    </span>
+
+                    <h3>
+                        Garrafa Térmica Inox Premium (1L/2L)
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 109,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Garrafa Térmica Inox Premium (1L/2L)"
+                        data-preco="109.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 4 -->
+
+            <article
+                class="card-produto"
+                data-nome="Erva-Mate Recheada Defumada"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/erva2.png"
+                        alt="Erva-Mate Recheada e Defumada"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        ERVA-MATE
+                    </span>
+
+                    <h3>
+                        Erva-Mate Recheada / Defumada (1kg)
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 27,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Erva-Mate Recheada / Defumada (1kg)"
+                        data-preco="27.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 5 -->
+
+            <article
+                class="card-produto"
+                data-nome="Mateira em Couro Legítimo"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/mateira.png"
+                        alt="Mateira em Couro Legítimo"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        MATEIRA ARTESANAL
+                    </span>
+
+                    <h3>
+                        Mateira em Couro Legítimo (Com divisórias)
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 189,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Mateira em Couro Legítimo (Com divisórias)"
+                        data-preco="189.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 6 -->
+
+            <article
+                class="card-produto"
+                data-nome="Porta-Erva Hermético"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/portaerva.png"
+                        alt="Porta-Erva Hermético"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        PORTA-ERVA
+                    </span>
+
+                    <h3>
+                        Porta-Erva Hermético com Bico Dosador
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 39,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Porta-Erva Hermético com Bico Dosador"
+                        data-preco="39.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 7 -->
+
+            <article
+                class="card-produto"
+                data-nome="Bomba de Chimarrão em Inox"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/bomba.png"
+                        alt="Bomba de Chimarrão em Inox"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        BOMBAS
+                    </span>
+
+                    <h3>
+                        Bomba de Chimarrão em Inox com Bojo Redondo
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 59,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Bomba de Chimarrão em Inox com Bojo Redondo"
+                        data-preco="59.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUTO 8 -->
+
+            <article
+                class="card-produto"
+                data-nome="Kit Meu Primeiro Mate"
+            >
+
+                <div class="imagem-produto">
+
+                    <img
+                        src="./img/kit.png"
+                        alt="Kit Meu Primeiro Mate"
+                    >
+
+                </div>
+
+                <div class="informacoes-produto">
+
+                    <span class="categoria">
+                        KITS VERDEJAR
+                    </span>
+
+                    <h3>
+                        Kit Meu Primeiro Mate (Cuia + Bomba + Erva)
+                    </h3>
+
+                </div>
+
+                <div class="parte-inferior-card">
+
+                    <p class="preco">
+                        R$ 159,90
+                    </p>
+
+                    <button
+                        class="botao-carrinho"
+                        data-nome="Kit Meu Primeiro Mate (Cuia + Bomba + Erva)"
+                        data-preco="159.90"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                    <button class="botao-comprar">
+                        COMPRAR
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer id="contato">
+
+        <div class="footer-conteudo">
+
+
+            <div class="footer-coluna" id="sobre">
+
+                <h4>VERDEJAR</h4>
+
+                <p>
+                    Sua dose diária de tradição e bem-estar.
+                    Escolhemos a dedo as melhores ervas e acessórios
+                    para o seu chimarrão perfeito!
+                </p>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <h4>MENU</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#inicio">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">
+                            Erva-Mate Premium
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">
+                            Cuias & Bombas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre">
+                            Nossa História
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <h4>SUPORTE</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Perguntas Frequentes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Prazos de Envio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Como cuidar da sua Cuia
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-coluna">
+
+                <h4>CONTATO</h4>
+
+                <p>
+                    <strong>E-mail:</strong><br>
+                    contato@verdejar.com.br
+                </p>
+
+                <p>
+                    <strong>WhatsApp:</strong><br>
+                    (00) 99999-9999
+                </p>
+
+                <p>
+                    <strong>Instagram:</strong><br>
+                    @verdejar.mate
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            © 2026 VERDEJAR.
+            Todos os direitos reservados.
+            CNPJ: 00.000.000/0001-00
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript do site -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
