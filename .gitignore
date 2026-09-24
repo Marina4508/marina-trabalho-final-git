@@ -1,0 +1,5 @@
+.vscode/
+node_mdules/
+.Ds_Store
+Thumbs.db
+.env
